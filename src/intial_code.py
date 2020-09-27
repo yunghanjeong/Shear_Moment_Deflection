@@ -49,7 +49,7 @@ senlen = 3.5
 senend1 = axl/2 - senlen/2
 senend2 = axl/2 + senlen/2
 senpltx = [senend1,senend2]
-#-------------------------Geometryconstants----------------------------------
+#-------------------------Geometric Constants----------------------------------
 inrt = (3.1415*(pow(OD,4)-pow(ID,4)))/64 #axle moment of inertica as pipe
 flexmod = 29000000 #modulus of elasticity of steel, 29 10^6 psi
 geo_const = flexmod*inrt #E*I
