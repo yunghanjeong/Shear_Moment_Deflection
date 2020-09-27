@@ -2,7 +2,7 @@
 
 This repo is a refactored code of multilevel calculation performed during Chassis Axle Sensor prototyping during my time as Mechanical Engineer at PowerFleet, Inc (NASDAQ: PWFL).
 
-[cooltractortrailor - getty images](https://static-25.sinclairstoryline.com/resources/media/c764120f-c6e0-48c6-ba00-0c8082020f10-large16x9_GettyImages822249792.jpg?1524838424831)
+![cooltractortrailor - getty images](https://static-25.sinclairstoryline.com/resources/media/c764120f-c6e0-48c6-ba00-0c8082020f10-large16x9_GettyImages822249792.jpg?1524838424831)
 
 ## Project Statement
 
