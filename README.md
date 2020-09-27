@@ -14,7 +14,11 @@ It is often said that the trucks are the bloodline of America and as the world p
 * 40ft fixed bed, twin axle, dual wheel, is the most common type of trailer on the road.
 * Each axle has their own leaf spring suspension. The suspension transfers the load from the frame to the axles. 
 * There is a linear relationship between the trailor load and the suspension compression.
-* There is measurable deflection of the axle when the trailer is under load
+* There is measurable deflection of the axle when the trailer is under load.
+* The axle/suspension assembly is a simply supported beam.
+* Strain is evenly distributed along the axle.
+
+![trailer_BDG](https://raw.githubusercontent.com/yunghanjeong/Shear_Moment_Deflection/master/images/trailor_freebodydiagram.PNG)
 
 ## Challenges
 
@@ -23,8 +27,16 @@ It is often said that the trucks are the bloodline of America and as the world p
   * Shear-Moment analysis can be performed to calculate theoreitcal distribution of the load between all supports
 * The trailer load is evenly distributed
   * Uneven distribution can be modeled as a combination of evenly distributed load and off-centered point load
-* The load is evenly distributed between roadside and curbside (driver vs passenger side) suspension. 
+* The load is evenly distributed between roadside and curbside (driver vs passenger side) suspension.
 
 ## Methods
 
-Solving engineering problems with numpy and matplotlib
+* The distributed load at each support can be calculated by [shear-moment analysis](https://en.wikipedia.org/wiki/Shear_and_moment_diagram#:~:text=Shear%20and%20bending%20moment%20diagrams,element%20such%20as%20a%20beam.).
+ * The relation between bending moment and deflection is described by [Euler-Bernoullie Beam Theory](https://en.wikipedia.org/wiki/Euler%E2%80%93Bernoulli_beam_theory) and sympy is utilized for integral calculus
+* Calculated load at support can be evenly splitted betwen two ends for deflection calculation.
+ * matplotlib is utilized for deflection visualization
+* Deflected segment (sensor measurement) is calculated with distance formula
+
+ ![deflection_visualized](https://raw.githubusercontent.com/yunghanjeong/Shear_Moment_Deflection/master/images/deflection_plot_example.png)
+
+
