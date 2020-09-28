@@ -59,7 +59,7 @@ mexp2int2 = integrate(mexp2int1,x)
 mexp2int2 = mexp2int2 + mexp2int2.subs(x,l)
 print('EIv(x) = ', mexp2int2,'\n')
 
-print('Solve for C at L-a where deflection is 0') #above first axle
+print('Solve for C at L-a where deflection is 0') #above first azxle
 print('EIv(l-a) = 0 = ',simplify(mexp2int2.subs(x,(l-a))), '\n')
 
 mexp2int2=expand(mexp2int2)
