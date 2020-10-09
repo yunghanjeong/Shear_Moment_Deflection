@@ -37,6 +37,6 @@ It is often said that the trucks are the bloodline of America and as the world p
  * matplotlib is utilized for deflection visualization
 * Deflected segment (sensor measurement) is calculated with distance formula
 
- ![deflection_visualized](https://raw.githubusercontent.com/yunghanjeong/Shear_Moment_Deflection/master/images/deflection_plot_example.png)
+ ![deflection_visualized](https://github.com/yunghanjeong/Shear_Moment_Deflection/blob/master/images/rear_front_axle.png?raw=true)
 
 
