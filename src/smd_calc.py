@@ -16,7 +16,7 @@ class solve_chassis:
         self.OD = OD
         self.wallthick = wallthick
         self.ID = self.OD - (2*self.wallthick)
-        self.flexmod = 29000000 # Modulus of Elasticity
+        self.flexmod = 290000000 # Modulus of Elasticity
         self.inrt = (3.1415*(pow(self.OD,4)-pow(self.ID,4)))/64 #Moment of Inertia
         self.geo_const = self.flexmod * self.inrt # AKA E*I
         self.axl = 48 #Axle length
@@ -26,7 +26,7 @@ class solve_chassis:
     #expected input: x= position along the beam 0 to length. a1/a2 = first fixed point aka spring_offset
     #                b1/b2 = roller support location aka length-spring_offset
     #                 w1/w2 = weight on the axles
-    def simp_im_def (self,x,w1,w2):
+    def im_def (self,x,w1,w2):
         a1 = self.spring_offset
         b1 = self.axl-self.spring_offset
         a2 = a1
